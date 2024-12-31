@@ -12,7 +12,7 @@ window.alert("your order is being prepared ");
  arr.push(usergender)
  arr.push(order)
 for (let i =0; i<=2;i++){
-    console.log(arr[i])
+    console.log(arr[i]);
 }
 function askg()
 {
