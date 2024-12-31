@@ -1,19 +1,32 @@
-console.log("Ex2");
+console.log("Ex 3:")
+let arr = []
+
 let username=prompt("enter your name :");
-let usergender=prompt("enter your gender :");
- if(usergender=="male"){
-    window.alert("welcome Mr"+" "+username);
- }
- else if(usergender=="female"){
-    window.alert("welcome Ms"+" "+username);
- }
- else{
-    window.alert("welcome");
- }
+askg()
+
 let order=prompt("entr your order : shawarma, zinger, burger ");
 let order_name=prompt("enter your order name :");
 window.alert("your order is being prepared ");
-console.log("the order for"+" "+username+","+order+" is prepared");
+
+ arr.push(username)
+ arr.push(usergender)
+ arr.push(order)
+for (let i =0; i<=2;i++){
+    console.log(arr[i])
+}
+function askg()
+{
+    let usergender=prompt("enter your gender :");
+    if(usergender=="male"){
+       window.alert("welcome Mr"+" "+username);
+    }
+    else if(usergender=="female"){
+       window.alert("welcome Ms"+" "+username);
+    }
+    else{
+       window.alert("welcome");
+    }
+}
 console.log("***********************");
 console.log("Q2");
 let num=8;

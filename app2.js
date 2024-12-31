@@ -30,3 +30,4 @@ while(usergender!=="male" && usergender!=="female")
         sum= sum +i;
     }
     window.alert("the sum is : "+ sum);
+    
