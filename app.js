@@ -66,7 +66,7 @@ switch(num){
 }
 console.log(result);
 
-
+//m
 
 let par = document.createElement('p');
 let ol = document.createElement('ol')
