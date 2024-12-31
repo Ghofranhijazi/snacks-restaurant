@@ -27,6 +27,7 @@ function askg()
        window.alert("welcome");
     }
 }
+let userage =prompt("enter your age :");
 console.log("***********************");
 console.log("Q2");
 let num=8;
@@ -67,3 +68,21 @@ console.log(result);
 
 
 
+let par = document.createElement('p');
+let ol = document.createElement('ol')
+let usergender = document.createElement('li')
+let ord = document.createElement('li')
+let age = document.createElement('li')
+
+par.textContent=username;
+usergender.textContent=usergender;
+age.textContent= userage;
+ord.textContent=order;
+//m
+let div=document.getElementById("hero");
+
+div.appendChild(par);
+div.append(ol);
+ol.append(usergender);
+ol.appendChild(ord);
+ol.appendChild(age)
