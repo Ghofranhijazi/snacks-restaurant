@@ -1,0 +1,98 @@
+[1mdiff --git a/app.js b/app.js[m
+[1mindex 2d79c1f..7be8a3d 100644[m
+[1m--- a/app.js[m
+[1m+++ b/app.js[m
+[36m@@ -2,21 +2,19 @@[m [mconsole.log("Ex 3:")[m
+ let arr = [][m
+ [m
+ let username=prompt("enter your name :");[m
+[31m-let usergender= askg(username)[m
+[31m-// new[m
+[31m-let userage =prompt("enter your age :");[m
+[31m-//[m
+[31m-let order=prompt("enter your order : shawarma, zinger, burger ");[m
+[32m+[m[32maskg()[m
+[32m+[m
+[32m+[m[32mlet order=prompt("entr your order : shawarma, zinger, burger ");[m
+ let order_name=prompt("enter your order name :");[m
+ window.alert("your order is being prepared ");[m
+ [m
+  arr.push(username)[m
+  arr.push(usergender)[m
+  arr.push(order)[m
+[31m-for (let i =0; i<arr.length; i++){[m
+[32m+[m[32mfor (let i =0; i<=2;i++){[m
+     console.log(arr[i]);[m
+ }[m
+[31m-function askg(username)[m
+[32m+[m[32mfunction askg()[m
+ {[m
+     let usergender=prompt("enter your gender :");[m
+     if(usergender=="male"){[m
+[36m@@ -28,9 +26,8 @@[m [mfunction askg(username)[m
+     else{[m
+        window.alert("welcome");[m
+     }[m
+[31m-    return usergender;[m
+ }[m
+[31m-[m
+[32m+[m[32mlet userage =prompt("enter your age :");[m
+ console.log("***********************");[m
+ console.log("Q2");[m
+ let num=8;[m
+[36m@@ -69,25 +66,23 @@[m [mswitch(num){[m
+ }[m
+ console.log(result);[m
+ [m
+[32m+[m[32m//m[m
+ [m
+[31m-// EX4 :[m
+[31m-let divelement = document.createElement("div");[m
+[31m-divelement.id = "user-infro";[m
+ let par = document.createElement('p');[m
+[31m-let ol = document.createElement('ol');[m
+[31m-let gender = document.createElement('li');[m
+[31m-let ord = document.createElement('li');[m
+[31m-let age = document.createElement('li');[m
+[32m+[m[32mlet ol = document.createElement('ol')[m
+[32m+[m[32mlet usergender = document.createElement('li')[m
+[32m+[m[32mlet ord = document.createElement('li')[m
+[32m+[m[32mlet age = document.createElement('li')[m
+ [m
+ par.textContent=username;[m
+[31m-gender.textContent=usergender;[m
+[32m+[m[32musergender.textContent=usergender;[m
+ age.textContent= userage;[m
+ ord.textContent=order;[m
+[32m+[m[32m//m[m
+[32m+[m[32mlet div=document.getElementById("hero");[m
+ [m
+[31m-document.body.appendChild(divelement);[m
+[31m-divelement.appendChild(par);[m
+[31m-divelement.appendChild(ol);[m
+[31m-ol.append(gender);[m
+[32m+[m[32mdiv.appendChild(par);[m
+[32m+[m[32mdiv.append(ol);[m
+[32m+[m[32mol.append(usergender);[m
+ ol.appendChild(ord);[m
+[31m-ol.appendChild(age);[m
+[31m-[m
+[32m+[m[32mol.appendChild(age)[m
+\ No newline at end of file[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex b7878f5..2dbf9d3 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -7,9 +7,9 @@[m
+     <link rel="stylesheet" href="style.css">[m
+ </head>[m
+ <body>[m
+[31m-    <h1> snacks-restaurant</h1>[m
+[31m-    <p> Welcome to snacks-restaurant website, your go-to destination for easy and professional catering!</p>[m
+[31m-    <!-- <div id ="hero"> -->[m
+[32m+[m[32m    <h1> welcome to snacks-restaurant</h1>[m
+[32m+[m[32m    <h2> this is your information</h2>[m
+[32m+[m[32m    <div id ="hero">[m
+     <script src="app.js">[m
+ [m
+     </script>[m
