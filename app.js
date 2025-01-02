@@ -2,21 +2,24 @@ console.log("Ex 3:")
 let arr = []
 
 let username=prompt("enter your name :");
-askg()
-
-let order=prompt("entr your order : shawarma, zinger, burger ");
+// new
+let userage =prompt("enter your age :");
+//
+let usergender = askg(username); 
+let order=prompt("enter your order : shawarma, zinger, burger ");
 let order_name=prompt("enter your order name :");
 window.alert("your order is being prepared ");
 
  arr.push(username)
  arr.push(usergender)
  arr.push(order)
-for (let i =0; i<=2;i++){
+ 
+for (let i =0; i<arr.length;i++){
     console.log(arr[i]);
 }
-function askg()
+function askg(username)
 {
-    let usergender=prompt("enter your gender :");
+    let usergender =prompt("enter your gender :");
     if(usergender=="male"){
        window.alert("welcome Mr"+" "+username);
     }
@@ -26,8 +29,9 @@ function askg()
     else{
        window.alert("welcome");
     }
+    return usergender;
 }
-let userage =prompt("enter your age :");
+
 console.log("***********************");
 console.log("Q2");
 let num=8;
@@ -66,23 +70,25 @@ switch(num){
 }
 console.log(result);
 
-//m
-
+//ex4:
+let divelement = document.createElement("div");
+divelement.id = "user-info";
 let par = document.createElement('p');
-let ol = document.createElement('ol')
-let usergender = document.createElement('li')
-let ord = document.createElement('li')
-let age = document.createElement('li')
+let ol = document.createElement('ol');
+let gender = document.createElement('li');
+let ord = document.createElement('li');
+let age = document.createElement('li');
 
-par.textContent=username;
-usergender.textContent=usergender;
-age.textContent= userage;
-ord.textContent=order;
-//m
-let div=document.getElementById("hero");
 
-div.appendChild(par);
-div.append(ol);
-ol.append(usergender);
-ol.appendChild(ord);
-ol.appendChild(age)
+par.textContent = username; 
+gender.textContent = usergender; 
+age.textContent = userage; 
+ord.textContent = order; 
+
+
+document.body.appendChild(divelement); 
+divelement.appendChild(par); 
+divelement.appendChild(ol); 
+ol.appendChild(gender); 
+ol.appendChild(ord); 
+ol.appendChild(age); 
