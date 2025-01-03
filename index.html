@@ -8,10 +8,43 @@
 </head>
 <body>
     <h1>  snacks-restaurant</h1>
-    <p>Welcome to snacks-restaurant website, your go-to destination for easy and professional catering!</p>
+    <p id ="par">Welcome to snacks-restaurant website, your go-to destination for easy and professional catering!</p>
+<!-- EX5 : -->
+ <form id="FormUser">
+    <p>Please fill out the following form:</p>
+    <label for="name">username:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name"> 
+
+    <label for="age">userage:</label>
+    <input type="text" id="age" name="age" placeholder="Enter your age">
+
+    <label for="gender">usergender:</label>
+    <input type="text" id="gender" name="gender" placeholder="Enter your gender(male\female)">
+
+    <p>Select your order (shawerma, zinger, burger):</p>
+    <input type="checkbox" id="shawerma" name="shawerma" value="shawerma">
+    <label for="shawerma"> shawerma</label><br>
+    <input type="checkbox" id="zinger" name="zinger" value="zinger">
+    <label for="zinger"> zinger</label><br>
+    <input type="checkbox" id="burger" name="burger" value="burger">
+    <label for="burger">burger</label><br>
+
+    <p>you want it as a combo or sandwich ?</p>
+    <input type="radio" name="yourchoice" value="combo" id="combo">
+    <label for="combo">combo</label><br>
+    <input type="radio" name="yourchoice" value="sandwich" id="sandwich">
+    <label for="sandwich">sandwich</label><br>
+
+    <button type="submit">Submit</button><br>
+    <p id="output"></p>
+
+    
+ </form>
+
    
     <script src="app.js">
-
     </script>
 </body>
 </html>
+
+
