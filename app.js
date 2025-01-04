@@ -29,7 +29,7 @@ function askg()
 }
 console.log("***********************");
 console.log("Q2");
-let num=8;
+let num=prompt("entr your number");
 let result;
 switch(num){
     case 1:
