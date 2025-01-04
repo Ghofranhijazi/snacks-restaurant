@@ -29,7 +29,7 @@ function askg()
 }
 console.log("***********************");
 console.log("Q2");
-let num=prompt("entr your number");
+let num= parseInt(prompt("entr your number"));
 let result;
 switch(num){
     case 1:
