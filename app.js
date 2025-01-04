@@ -2,7 +2,7 @@ console.log("Ex 3:")
 let arr = []
 
 let username=prompt("enter your name :");
-askg()
+askg();
 
 let order=prompt("entr your order : shawarma, zinger, burger ");
 let order_name=prompt("enter your order name :");
